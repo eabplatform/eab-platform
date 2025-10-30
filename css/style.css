@@ -195,7 +195,7 @@ footer {
 /* - New Styles for Images & Layout - */
 /* ==================================== */
 
-/* 1. HERO Section Background (تم إزالة ../) */
+/* 1. HERO Section Background (تم التأكد من المسار: images/data_grid_hero.jpg) */
 #hero-section {
     background: linear-gradient(rgba(29, 36, 47, 0.85), rgba(29, 36, 47, 0.85)), url('images/data_grid_hero.jpg') no-repeat center center/cover;
     color: var(--color-white);
