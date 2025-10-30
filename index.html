@@ -3,74 +3,187 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EAB-platform | الخدمات الطلابية والأكاديمية المتخصصة</title>
-    <style>
-        /* الأنماط الأساسية */
-        body { font-family: 'Droid Arabic Naskh', 'Arial', sans-serif; line-height: 1.8; margin: 0; padding: 0; text-align: right; background-color: #f4f7f6; color: #333; }
-        .container { max-width: 900px; margin: 20px auto; padding: 0 15px; }
-        
-        /* الرأس (Header) */
-        header { background-color: #007bff; color: white; padding: 25px 0; text-align: center; border-bottom: 5px solid #0056b3; }
-        header h1 { margin: 0 0 5px 0; font-size: 2.2em; }
-        header p { font-size: 1.1em; opacity: 0.9; }
-
-        /* الأقسام (Sections) */
-        section { background-color: white; padding: 25px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); }
-        h2 { color: #007bff; border-right: 4px solid #007bff; padding-right: 10px; margin-top: 0; font-size: 1.6em; }
-
-        /* القوائم (Service Lists) */
-        .service-list { list-style: none; padding: 0; margin-top: 15px; }
-        .service-list li { padding: 12px 0; border-bottom: 1px dashed #eee; display: flex; align-items: center; }
-        .service-list li:last-child { border-bottom: none; }
-        .service-list li::before { content: '✅'; margin-left: 10px; font-weight: bold; color: #28a745; }
-        .highlight { color: #dc3545; font-weight: bold; }
-
-        /* قسم التواصل */
-        .contact-section { background: #28a745; color: white; padding: 25px; text-align: center; border-radius: 8px; margin-top: 30px; }
-        .contact-section h2 { color: white; border-right-color: white; }
-        .contact-section a { color: #ffeb3b; text-decoration: none; font-weight: bold; font-size: 1.3em; display: block; margin-top: 10px; }
-    </style>
+    <title>EAB-platform | منصتك للخدمات الطلابية المتكاملة</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 
-    <header>
-        <h1>🌟 EAB-platform 🌟</h1>
-        <p>منصتك الشاملة للخدمات الطلابية والأكاديمية المتخصصة والاحترافية</p>
+    <header class="hero-section">
+        <div class="container">
+            <h1>منصة طلابية متميزة تنجز لك كل شيء – <span class="highlight">بسرعة، جودة، وبكل سرية</span></h1>
+            <p>شريكك الموثوق في الأكاديمي، التقني، التصميمي، وبحوث البيانات. نلتزم بالدفع بعد التسليم.</p>
+            <div class="hero-buttons">
+                <a href="https://wa.me/966544158661" target="_blank" class="btn btn-primary"><i class="fab fa-whatsapp"></i> تواصل الآن عبر واتساب</a>
+                <a href="#services" class="btn btn-secondary">تعرف على خدماتنا</a>
+            </div>
+            <div class="features-summary">
+                <span><i class="fas fa-lock"></i> سرية تامة</span>
+                <span><i class="fas fa-bolt"></i> سرعة إنجاز</span>
+                <span><i class="fas fa-award"></i> جودة مضمونة</span>
+            </div>
+        </div>
     </header>
 
-    <div class="container">
-        
-        <section>
-            <h2>📚 خدماتنا الأكاديمية العامة</h2>
-            <ul class="service-list">
-                <li>إعداد بحوث وتقارير أكاديمية دقيقة.</li>
-                <li>إشراف متكامل على رسائل الماجستير والدكتوراه (عربية/إنجليزية/فرنسية).</li>
-                <li>تصميم عروض <span class="highlight">"باوربوينت"</span> احترافية وجذابة.</li>
-                <li>تحليل البيانات وإعداد تقارير <span class="highlight">"إكسل"</span> متقدمة.</li>
-                <li>تنسيق مستندات <span class="highlight">"وورد"</span> بشكل أنيق واحترافي.</li>
-                <li>باقة شاملة من الخدمات الطلابية المساندة: <span class="highlight">حل الوجبات (Homework/Assignments)، التلاخيص، التقارير.</span></li>
-            </ul>
-        </section>
+    <section id="why-choose-us" class="section-alt">
+        <div class="container">
+            <h2>لماذا تختار <span class="platform-name">EAB-platform</span>؟</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <i class="fas fa-bolt icon-bg-primary"></i>
+                    <h3>سرعة</h3>
+                    <p>إنجاز سريع ضمن الوقت المتفق عليه.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-check-circle icon-bg-secondary"></i>
+                    <h3>جودة</h3>
+                    <p>دقة عالية وتدقيق قبل التسليم.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-user-secret icon-bg-primary"></i>
+                    <h3>سرية</h3>
+                    <p>حفظ كامل لخصوصية بياناتك.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-hand-holding-usd icon-bg-secondary"></i>
+                    <h3>الدفع بعد التسليم</h3>
+                    <p>رضاك أولاً... الدفع لاحقاً.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <section>
-            <h2>🔬 استشارات متخصصة (هندسة وأنظمة تحكم)</h2>
-            <p>نقدم دعمًا متعمقًا في المواضيع الهندسية والبرمجية، مع دعم كامل لضمان <span class="highlight">تقليل نسبة الاستلال ببرنامج Turnitin</span>.</p>
-            <ul class="service-list">
-                <li><span class="highlight">المحاكاة والنمذجة:</span> باستخدام برنامج <span class="highlight">MATLAB/Simulink</span>.</li>
-                <li><span class="highlight">أنظمة التحكم:</span> تطبيقات ANN, ANFIS, FLC, SMC, Back-steeping control.</li>
-                <li><span class="highlight">أنظمة القيادة الكهربائية:</span> FOC, DTC, PTC, PCC.</li>
-                <li><span class="highlight">الطاقات المتجددة وتحسين الجودة:</span> PV/Wind energy, SAPF.</li>
-                <li><span class="highlight">أنظمة الروبوت:</span> Quadcopter, Mobile Robotics.</li>
-            </ul>
-        </section>
-        
-        <section class="contact-section">
-            <h2>📞 للتواصل وطلب الخدمات الآن</h2>
-            <p>نحن جاهزون للإجابة على استفساراتك وتقديم عروض أسعار مدروسة.</p>
-            <a href="https://wa.me/966544158661" target="_blank">📲 اضغط هنا للتواصل واتساب: +966544158661</a>
-        </section>
+    <section id="services">
+        <div class="container">
+            <h2>خدماتنا المتنوعة – كل ما تحتاجه في مكان واحد</h2>
+            <div class="cards-grid">
+                <div class="card service-card">
+                    <i class="fas fa-graduation-cap icon-bg-primary"></i>
+                    <h3>الخدمات الأكاديمية</h3>
+                    <ul>
+                        <li>حل الكويز – الميد – الفاينال.</li>
+                        <li>إعداد التقارير الأسبوعية والشهرية.</li>
+                        <li>بحوث علمية (عربي / إنجليزي).</li>
+                        <li>مشاريع تخرج ورسائل ماجستير.</li>
+                        <li>تحليل إحصائي احترافي.</li>
+                        <li>تلخيص كتب ومحاضرات.</li>
+                    </ul>
+                </div>
+                <div class="card service-card">
+                    <i class="fas fa-code icon-bg-secondary"></i>
+                    <h3>الخدمات التقنية والبرمجية</h3>
+                    <ul>
+                        <li>مشاريع برمجية بكل لغات البرمجة.</li>
+                        <li>تطوير مواقع وتطبيقات.</li>
+                        <li>تنفيذ الأكواد والتقارير البرمجية.</li>
+                        <li>حلول تقنية مخصصة للمشاريع الجامعية.</li>
+                    </ul>
+                </div>
+                <div class="card service-card">
+                    <i class="fas fa-paint-brush icon-bg-primary"></i>
+                    <h3>الخدمات التصميمية والإبداعية</h3>
+                    <ul>
+                        <li>تصميم بوربوينت وإنفوجرافيك احترافي.</li>
+                        <li>تصميم سيرة ذاتية (CV) مميزة.</li>
+                        <li>تصميم بوسترات وبروشورات.</li>
+                        <li>مونتاج وتصميم محتوى مرئي تسويقي.</li>
+                    </ul>
+                </div>
+                <div class="card service-card">
+                    <i class="fas fa-chart-bar icon-bg-secondary"></i>
+                    <h3>خدمات البحوث والتحليل</h3>
+                    <ul>
+                        <li>تحليل بيانات إحصائية متكاملة.</li>
+                        <li>إعداد دراسات حالة وتقارير تحليلية.</li>
+                        <li>مراجعة وتدقيق لغوي وأكاديمي.</li>
+                        <li>كتابة مقترحات بحث (Proposal).</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    </div>
+    <section id="how-we-work" class="section-alt">
+        <div class="container">
+            <h2>كيف نشتغل؟</h2>
+            <div class="cards-grid steps-grid">
+                <div class="card step-card">
+                    <span class="step-number">1</span>
+                    <h3>تواصل وشرح الطلب</h3>
+                    <p>أرسل التفاصيل والموعد المطلوب على واتساب.</p>
+                </div>
+                <div class="card step-card">
+                    <span class="step-number">2</span>
+                    <h3>خطة وسعر مناسب</h3>
+                    <p>نرد عليك بخطة مختصرة وعرض سعر.</p>
+                </div>
+                <div class="card step-card">
+                    <span class="step-number">3</span>
+                    <h3>تنفيذ وتحديثات</h3>
+                    <p>نشتغل ونشاركك تحديثات دورية.</p>
+                </div>
+                <div class="card step-card">
+                    <span class="step-number">4</span>
+                    <h3>تسليم والدفع</h3>
+                    <p>تستلم الملف النهائي... ثم تدفع.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-form">
+        <div class="container">
+            <h2>جاهز تبدأ؟</h2>
+            <p class="subtitle">أرسل لنا وصف مختصر لطلبك والموعد النهائي — ونرجع لك بخطة جاهزة خلال <span class="highlight">24-48 ساعة</span>.</p>
+            <ul class="contact-info-list">
+                <li>✓ كل الخدمات المذكورة متاحة أونلاين.</li>
+                <li>✓ دفع بعد التسليم.</li>
+                <li>✓ دعم مستمر حتى الرضا الكامل.</li>
+            </ul>
+            <form class="contact-form-design">
+                <input type="text" placeholder="الاسم (اسمك أو اسم الجهة)" required>
+                <input type="email" placeholder="البريد الإلكتروني (example@example.com)" required>
+                <textarea placeholder="الطلب بالتفصيل: مثال: مشروع تخرج + عرض تقديمي + موعد التسليم يوم الإثنين" rows="5" required></textarea>
+                <a href="https://wa.me/966544158661" target="_blank" class="btn btn-primary btn-block"><i class="fab fa-whatsapp"></i> واتساب مباشر</a>
+                <button type="submit" class="btn btn-secondary btn-block">إرسال</button>
+                <p class="form-note">* سيفتح محادثة واتساب عند الإرسال.</p>
+            </form>
+        </div>
+    </section>
+
+    <section id="faq" class="section-alt">
+        <div class="container">
+            <h2>أسئلة متكررة</h2>
+            <div class="faq-item">
+                <div class="faq-question">هل تلتزمون بالمواعيد الضيقة؟ <i class="fas fa-chevron-down"></i></div>
+                <div class="faq-answer">نعم، فريقنا مدرب على التعامل مع المواعيد الضيقة بفعالية وكفاءة، مع الحفاظ على الجودة العالية.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">هل تشتغلون بالعربي والإنجليزي؟ <i class="fas fa-chevron-down"></i></div>
+                <div class="faq-answer">بالتأكيد، نقدم خدماتنا باللغتين العربية والإنجليزية، وكذلك الفرنسية في بعض التخصصات.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">هل تضمنون السرية؟ <i class="fas fa-chevron-down"></i></div>
+                <div class="faq-answer">نعم، السرية هي أولويتنا القصوى. جميع بيانات العملاء ومعلومات المشاريع يتم التعامل معها بأقصى درجات السرية والاحترافية.</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 EAB-platform. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for FAQ toggle
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const faqItem = button.parentElement;
+                faqItem.classList.toggle('active');
+            });
+        });
+    </script>
 
 </body>
 </html>

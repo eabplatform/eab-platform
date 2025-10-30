@@ -1,0 +1,434 @@
+/* General Styles */
+body {
+    font-family: 'Droid Arabic Naskh', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    background-color: #f4f7f6; /* Light greyish background */
+    color: #333;
+    direction: rtl; /* Right-to-left direction for Arabic */
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+h1, h2, h3 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 2.2em;
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #007bff; /* Primary blue for underline */
+    margin: 10px auto 0 auto;
+    border-radius: 2px;
+}
+
+/* Sections */
+section {
+    padding: 60px 0;
+}
+
+.section-alt {
+    background-color: #eef2f5; /* Slightly darker background for alternating sections */
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    text-align: center;
+    margin: 5px;
+    font-size: 1.1em;
+}
+
+.btn-primary {
+    background-color: #28a745; /* Green for WhatsApp */
+    color: white;
+    border: 2px solid #28a745;
+}
+
+.btn-primary:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #007bff; /* Blue for secondary action */
+    border: 2px solid #007bff;
+}
+
+.btn-secondary:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-block {
+    display: block;
+    width: calc(100% - 10px); /* Adjust for margin */
+    margin: 10px auto;
+}
+
+.highlight {
+    color: #007bff; /* Primary highlight color */
+    font-weight: bold;
+}
+
+.platform-name {
+    color: #28a745; /* Green highlight for platform name */
+}
+
+/* Header - Hero Section */
+.hero-section {
+    background-color: #1a2a3a; /* Dark background inspired by image */
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section h1 {
+    font-size: 2.8em;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.hero-section p {
+    font-size: 1.2em;
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+    opacity: 0.9;
+}
+
+.hero-buttons {
+    margin-top: 30px;
+}
+
+.hero-buttons .btn {
+    min-width: 200px;
+}
+
+.features-summary {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-size: 1.1em;
+}
+
+.features-summary span {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px 20px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.features-summary i {
+    color: #28a745; /* Green icons */
+}
+
+/* Cards Grid Layout */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card i {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 50%;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 60px;
+    min-height: 60px;
+}
+
+.icon-bg-primary {
+    background-color: #007bff; /* Blue */
+}
+
+.icon-bg-secondary {
+    background-color: #28a745; /* Green */
+}
+
+.card h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.card p {
+    color: #555;
+    font-size: 1em;
+    line-height: 1.7;
+}
+
+/* Service Cards Specific */
+.service-card {
+    text-align: right;
+    align-items: flex-start;
+}
+
+.service-card ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.service-card ul li {
+    padding: 8px 0;
+    border-bottom: 1px dashed #eee;
+    color: #555;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.service-card ul li:last-child {
+    border-bottom: none;
+}
+
+.service-card ul li::before {
+    content: '•'; /* Bullet point */
+    color: #007bff;
+    font-size: 1.2em;
+    line-height: 1;
+    margin-top: 2px;
+}
+
+/* How We Work Steps */
+.steps-grid .card {
+    text-align: center;
+}
+
+.step-card .step-number {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* Contact Form Section */
+#contact-form {
+    background-color: #1a2a3a; /* Dark background like hero section */
+    color: white;
+    text-align: center;
+    padding: 60px 0;
+}
+
+#contact-form h2 {
+    color: white;
+}
+
+#contact-form h2::after {
+    background-color: white;
+}
+
+#contact-form .subtitle {
+    font-size: 1.1em;
+    max-width: 700px;
+    margin: 0 auto 20px auto;
+    opacity: 0.9;
+}
+
+.contact-info-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-size: 1.1em;
+}
+
+.contact-info-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #f0f0f0;
+}
+
+.contact-info-list li::before {
+    content: '✓';
+    color: #28a745; /* Green checkmark */
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.contact-form-design {
+    max-width: 600px;
+    margin: 30px auto;
+    background-color: #2e3b4e; /* Slightly lighter dark for the form */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form-design input[type="text"],
+.contact-form-design input[type="email"],
+.contact-form-design textarea {
+    width: calc(100% - 20px);
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #4a5c70;
+    border-radius: 8px;
+    background-color: #3b4c60;
+    color: white;
+    font-size: 1em;
+    direction: rtl;
+    text-align: right;
+}
+
+.contact-form-design input::placeholder,
+.contact-form-design textarea::placeholder {
+    color: #b0b0b0;
+}
+
+.contact-form-design .btn-primary,
+.contact-form-design .btn-secondary {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.form-note {
+    font-size: 0.9em;
+    opacity: 0.7;
+    margin-top: 20px;
+}
+
+/* FAQ Section */
+#faq .faq-item {
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+#faq .faq-question {
+    padding: 18px 25px;
+    font-weight: bold;
+    font-size: 1.1em;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #333;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #eee;
+}
+
+#faq .faq-question i {
+    transition: transform 0.3s ease;
+    color: #007bff;
+}
+
+#faq .faq-item.active .faq-question i {
+    transform: rotate(180deg);
+}
+
+#faq .faq-answer {
+    padding: 0 25px;
+    background-color: #fff;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out, padding 0.4s ease-out;
+    color: #555;
+}
+
+#faq .faq-item.active .faq-answer {
+    max-height: 150px; /* Adjust based on content */
+    padding: 15px 25px;
+}
+
+/* Footer */
+footer {
+    background-color: #1a2a3a; /* Dark background */
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 0.9em;
+    opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2em;
+    }
+
+    .hero-section p {
+        font-size: 1em;
+    }
+
+    .cards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-buttons .btn {
+        min-width: unset;
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .features-summary {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    section {
+        padding: 40px 0;
+    }
+}
+
