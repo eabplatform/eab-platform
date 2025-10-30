@@ -195,9 +195,9 @@ footer {
 /* - New Styles for Images & Layout - */
 /* ==================================== */
 
-/* 1. HERO Section Background (Using data_grid_hero.jpg) */
+/* 1. HERO Section Background (تم إزالة ../) */
 #hero-section {
-    background: linear-gradient(rgba(29, 36, 47, 0.85), rgba(29, 36, 47, 0.85)), url('../images/data_grid_hero.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(29, 36, 47, 0.85), rgba(29, 36, 47, 0.85)), url('images/data_grid_hero.jpg') no-repeat center center/cover;
     color: var(--color-white);
     padding: 120px 20px;
     min-height: 85vh; /* زيادة ارتفاع الهيرو */
@@ -296,7 +296,7 @@ footer {
     #hero-section p {
         font-size: 1em;
     }
-
+    
     .why-choose-us .responsive-img {
         margin-top: 20px;
     }
