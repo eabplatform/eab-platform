@@ -9,7 +9,21 @@
 </head>
 <body>
 
-    <header class="hero-section">
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>EAB-platform</span>
+            </a>
+            <div class="nav-links">
+                <a href="#services">الخدمات</a>
+                <a href="#why-choose-us">لماذا نختار؟</a>
+                <a href="#contact-form" class="btn btn-nav">تواصل</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section hero-top-padding">
         <div class="container">
             <h1>منصة طلابية متميزة تنجز لك كل شيء – <span class="highlight">بسرعة، جودة، وبكل سرية</span></h1>
             <p>شريكك الموثوق في الأكاديمي، التقني، التصميمي، وبحوث البيانات. نلتزم بالدفع بعد التسليم.</p>
@@ -176,7 +190,6 @@
     </footer>
 
     <script>
-        // JavaScript for FAQ toggle
         document.querySelectorAll('.faq-question').forEach(button => {
             button.addEventListener('click', () => {
                 const faqItem = button.parentElement;
