@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="60" viewBox="0 0 360 120">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#00FF88"/>
+      <stop offset="1" stop-color="#00B3FF"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="#0A0F14" rx="8"/>
+  <text x="30" y="75" font-family="Orbitron, Arial, sans-serif" font-size="44" fill="url(#g)">
+    &lt;EAB /&gt;
+  </text>
+  <text x="250" y="78" font-family="Cairo, Arial, sans-serif" font-size="22" fill="#98A2B3">PLATFORM</text>
+</svg>
